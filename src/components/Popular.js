@@ -40,6 +40,7 @@ const Popular = () => {
                 <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
+                  <Gradient/>
                 </Card>
                 </SplideSlide>
 
@@ -67,7 +68,6 @@ const Card = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-
   }
 
   p{
@@ -85,7 +85,15 @@ const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center
-
   }`
+  
+  const Gradient = styled.div`
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7))
+  `
+  
 
 export default Popular
