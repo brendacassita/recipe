@@ -1,5 +1,5 @@
 import {FaPizzaSlice, FaHamburger } from "react-icons/fa"
-import {GiNoodles, GiChopSticks} from "react-icons/gi"
+import {GiNoodles, GiChopsticks} from "react-icons/gi"
 import styledComponents from "styled-components"
 
 const Category = () => {
@@ -18,7 +18,7 @@ const Category = () => {
         <h4>Thai</h4>
       </div>
       <div>
-        <GiChopSticks/>
+        <GiChopsticks/>
         <h4>Asian</h4>
       </div>
     </div>
