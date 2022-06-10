@@ -21,10 +21,10 @@ const Veggie = () => {
       setVeggie(JSON.parse(check))
     }else{
       const api = await fetch (
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`)
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&vegetarian`)
       const data = await api.json()
 
-      localStorage.setItem('popular', JSON.stringify(data.recipes))
+      localStorage.setItem('veggie', JSON.stringify(data.recipes))
 
       console.log(data)
       console.log('data.recipe:', data.recipe)
@@ -37,7 +37,7 @@ const Veggie = () => {
     <div>
         
           <Wrapper>
-            <h3>Veggie</h3>
+            <h3>Vegetarian Picks</h3>
             <Splide options={{
               perPage: 5,
               arrows: false,
