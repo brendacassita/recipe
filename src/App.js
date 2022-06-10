@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 function App() {
   return (
     <div className="App">
-     <h1>Recipe App</h1>
+     <h1>Recipes</h1>
      <Home />
 
     </div>
