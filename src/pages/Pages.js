@@ -1,6 +1,6 @@
 import Home from "./Home"
 import React from "react"
-import { Route, Routes, BrowserRouter } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import Cuisine from "./Cuisine"
 
 const Pages = () =>{
@@ -9,8 +9,6 @@ const Pages = () =>{
       <Routes>
         <Route path ='/' element={<Home/>} />
         <Route path ='/cuisine/:type' element={<Cuisine/>} />
-        <Route path ='/cuisine' element={<Cuisine/>} />
-
       </Routes>
     
 
