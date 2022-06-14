@@ -1,38 +1,38 @@
-import {FaPizzaSlice, FaHamburger } from "react-icons/fa"
-import {GiNoodles, GiChopsticks} from "react-icons/gi"
-import styled from "styled-components"
-import { NavLink } from "react-router-dom"
+import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
+import { GiNoodles, GiChopsticks } from "react-icons/gi";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const Category = () => {
-  return(
+  return (
     <List>
-      <SLink to={"/cuisine/Italian"}>
+      <SLink to={"/cuisines/Italian"}>
         <FaPizzaSlice />
-        <h4>Italian </h4>
+        <h4>Italian</h4>
       </SLink>
-      <SLink to={"/cuisine/American"}>
+      <SLink to={"/cuisines/American"}>
         <FaHamburger />
-        <h4>American </h4>
+        <h4>American</h4>
       </SLink>
-      <SLink to={"/cuisine/Thai"}>
+      <SLink to={"/cuisines/Thai"}>
         <GiNoodles />
-        <h4>Thai </h4>
+        <h4>Thai</h4>
       </SLink>
-      <SLink to={"/cuisine/Japanese"}>
+      <SLink to={"/cuisines/Japanese"}>
         <GiChopsticks />
-        <h4>Japanese </h4>
+        <h4>Japanese</h4>
       </SLink>
     </List>
-  )
-}
+  );
+};
 
 const List = styled.div`
   display: flex;
   justify-content: center;
-  margin: 2rem 0rem;
-`
+  margin: 2rem 0;
+`;
 
-const SLink =  styled(NavLink)`
+const SLink = styled(NavLink)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,34 +40,27 @@ const SLink =  styled(NavLink)`
   border-radius: 50%;
   margin-right: 2rem;
   text-decoration: none;
-  background: linear-gradient(35deg, #494949, #313131);
   width: 6rem;
   height: 6rem;
+  background: linear-gradient(35deg, #494949, #313131);
   cursor: pointer;
   transform: scale(0.8);
-
   h4 {
-    color: white;
+    color: #fff;
     font-size: 0.8rem;
   }
-
   svg {
-    color: white;
+    color: #fff;
     font-size: 1.5rem;
   }
-
-  &.active{
+  &.active {
     background: linear-gradient(to right, #f27121, #e94057);
-
     svg {
-      color: white;
+      color: #fff;
     }
-
     h4 {
-      color: white;
+      color: #fff;
     }
   }
-  `;
-
-
-export default Category
+`;
+export default Category;

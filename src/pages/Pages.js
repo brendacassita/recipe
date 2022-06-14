@@ -1,21 +1,23 @@
-import Home from "./Home"
-import React from "react"
-import { Route, Routes } from "react-router-dom"
-import Cuisine from "./Cuisine"
-import Searched from "./Searched"
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./Home";
+import Cuisines from "./Cuisines";
+import Searched from "./Searched";
+import Recipe from "./Recipe";
+import { AnimatePresence } from "framer-motion";
 
 const Pages = () => {
-  return(
-    
-      <Routes>
-        <Route path ="/" element={<Home />} />
-        <Route path ="/cuisine/:type" element={<Cuisine />} />
-        <Route path ="/searched/:search" element={<Searched />} />
+  const location = useLocation();
 
+  return (
+    <AnimatePresence exitBeforeEnter>
+      <Routes Location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/cuisines/:type" element={<Cuisines />} />
+        <Route path="/searched/:search" element={<Searched />} />
+        <Route path="/recipe/:id/*" element={<Recipe />} />
       </Routes>
-    
+    </AnimatePresence>
+  );
+};
 
-  )
-}
-
-export default Pages
+export default Pages;
