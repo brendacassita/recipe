@@ -7,19 +7,19 @@ const Category = () => {
   return(
     <List>
       <SLink to={"/cuisine/Italian"}>
-        <FaPizzaSlice/>
+        <FaPizzaSlice />
         <h4>Italian </h4>
       </SLink>
       <SLink to={"/cuisine/American"}>
-        <FaHamburger/>
+        <FaHamburger />
         <h4>American </h4>
       </SLink>
       <SLink to={"/cuisine/Thai"}>
-        <GiNoodles/>
+        <GiNoodles />
         <h4>Thai </h4>
       </SLink>
       <SLink to={"/cuisine/Japanese"}>
-        <GiChopsticks/>
+        <GiChopsticks />
         <h4>Japanese </h4>
       </SLink>
     </List>
