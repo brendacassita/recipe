@@ -27,7 +27,7 @@ const Veggie = () => {
       localStorage.setItem('veggie', JSON.stringify(data.recipes))
 
       console.log(data)
-      console.log('data.recipe:', data.recipe)
+      console.log('data.recipe:', data.recipes)
       setVeggie(data.recipes)
     }
 
