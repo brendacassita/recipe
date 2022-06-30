@@ -18,9 +18,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "cd client && npm install --only=dev && npm install && npm run build && cd ..",
+  "deploy": "cp -a client/build/. public/",
+  "heroku-postbuild": "npm run build && npm run deploy && echo 'Client Built'"
+    
+    
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Spoonacular API recipe app",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendacassita/recipe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendacassita/recipe/issues"
+  },
+  "homepage": "https://github.com/brendacassita/recipe#readme"
 }
