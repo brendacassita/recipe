@@ -24,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+  "deploy": "cp -a client/build/. public/",
   "heroku-postbuild": "npm run build && npm run deploy && echo 'Client Built'"
     
     
