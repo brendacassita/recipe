@@ -8,6 +8,7 @@ import { GiKnifeFork } from "react-icons/gi";
 const App = () => {
   return (
     <div>
+      
       <Nav>
         <GiKnifeFork />
         <Logo to={"/"}>Delicious</Logo>
@@ -18,6 +19,7 @@ const App = () => {
     </div>
   );
 };
+//thing
 
 const Nav = styled.div`
   padding: 4rem 0;
