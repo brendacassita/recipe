@@ -71,7 +71,6 @@ const Card = styled.div`
   border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
-
   img{
     border-radius: 2rem;
     position: absolute;
@@ -80,7 +79,6 @@ const Card = styled.div`
     height: 100%;
     object-fit: cover;
   }
-
   p{
     position: absolute;
     z-index: 10;

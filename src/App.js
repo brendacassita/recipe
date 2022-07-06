@@ -8,7 +8,6 @@ import { GiKnifeFork } from "react-icons/gi";
 const App = () => {
   return (
     <div>
-      
       <Nav>
         <GiKnifeFork />
         <Logo to={"/"}>Delicious</Logo>
